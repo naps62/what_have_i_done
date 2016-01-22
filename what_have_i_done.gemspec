@@ -4,11 +4,11 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'what_have_i_done/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "what_have_i_don"
+  gem.name          = "what_have_i_done"
   gem.version       = WhatHaveIDone::VERSION
   gem.authors       = ["Miguel Palhas"]
   gem.email         = ["miguel@subvisual.co"]
-  gem.description   = %q{Provide me a summary of my toggl work day}
+  gem.summary       = %q{Provide me a summary of my toggl work day}
   gem.homepage      = "https://github.com/naps62/what_have_i_done"
 
   gem.files         = `git ls-files`.split($/)
@@ -19,7 +19,6 @@ Gem::Specification.new do |gem|
   gem.licenses      = ['MIT']
 
   gem.required_ruby_version = '>= 1.9.3'
-  gem.add_dependency 'togglv8'
-  gem.add_dependency 'i18n'
-  gem.add_dependency 'rainbow'
+  gem.add_dependency 'togglv8', '~> 1.0.0'
+  gem.add_dependency 'rainbow', '~> 2.0.0'
 end
