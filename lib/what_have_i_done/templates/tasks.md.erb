@@ -1,0 +1,4 @@
+<% @data.each do |project, tasks| %>
+# <%= project.capitalize %>
+<%= tasks.map(&method(:formatted_task)).join("\n") %>
+<% end %>
